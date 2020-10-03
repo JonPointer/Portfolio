@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Link to additional CSS file -->
+    <link rel="stylesheet" href="./Assets/style.css">
+
+    <!-- Links to Bootstrap Javascript files to enable drop down menu function  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- Tab Title      -->
+    <title>Portfolio</title>
+</head>
+
+<!-- ??? Need to replace bg-dark below with an image  -->
+
+<body class="bg-dark">
+    <!-- Start the navbar, but no container, so that the navbar extends the full width of the window with no side margins -->
+    <!-- Navbar Class "navbar-expand-lg" so content is 100% wide until large breakpoint of 992px -->
+    <!-- bg-light for navbar background coloring and navbar-light for text coloring   -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Create a navbar-brand with a href going no-where - on other pages it will link back to this About (index) page  -->
+        <a class="navbar-brand" href="#">Jon Pointer</a>
+        <!-- Create a navbar-toggler that collapses on the lg setting above and references the id navbarNavAltMarkup below -->
+        <!-- ??? Documentation for these other attributes -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Create the items for the navbar-toggler above  -->
+        <!-- ??? Same documentation question -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Link to each html file.  Portfolio link stays on this page  -->
+                <a class="nav-link" href="./contact.html">Contact</a>
+                <a class="nav-link active" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./index.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Set a container for the body of the page  -->
+    <main class="container-fluid">
+        <br>
+        <br>
+        <!-- New row breaking the page into two columns - one with picture and text in a jumbotron box, and one blank.
+        The columns will be sm so that they are full screen on the small screen and limited to 8/4 above that. -->
+        <section class="row">
+            <section class="col-sm-8">
+                <!-- Jumbotron to hold the content of this section in one box -->
+                <article class="jumbotron bg-white h-100">
+                    <h1>Portfolio</h1>
+                    <!-- Horizontal dividing line -->
+                    <hr>
+
+                    <!-- Portfolio Images -->
+                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
+                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
+                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
+                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
+                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
+                </article>
+            </section>
+        </section>
+        <!-- Other blank columns for blank space to the right of the jumbotron -->
+        <section class="col-sm-4"></section>
+    </main>
+</body>
+
+</html>
