@@ -26,7 +26,9 @@
     <title>About Me</title>
 </head>
 
-<body>
+<!-- ??? Need to replace bg-dark below with an image  -->
+
+<body class="bg-dark">
     <!-- Start the navbar, but no container, so that the navbar extends the full width of the window with no side margins -->
     <!-- Navbar Class "navbar-expand-lg" so content is 100% wide until large breakpoint of 992px -->
     <!-- bg-light for navbar background coloring and navbar-light for text coloring   -->
@@ -52,19 +54,18 @@
     </nav>
 
     <!-- Set a container for the body of the page  -->
-    <div class="container-fluid">
+    <main class="container-fluid">
         <br>
         <br>
         <!-- New row breaking the page into two columns - one with picture and text in a jumbotron box, and one blank.
         The columns will be sm so that they are full screen on the small screen and limited to 8/4 above that. -->
-        <div class="row">
-            <div class="col-sm-8">
+        <section class="row">
+            <section class="col-sm-8">
                 <!-- Jumbotron to hold the content of this section in one box -->
-                <div class=jumbotron>
+                <article class="jumbotron bg-white">
                     <h1>About Me</h1>
                     <!-- Horizontal dividing line -->
                     <hr>
-
                     <!-- Set image with text to the right -->
                     <p>
                         <!-- Float image to the left and establish margin on the right and bottom of the image  -->
@@ -80,18 +81,12 @@
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro rem rerum quam animi tempora sed.
                         Sed cum officiis facere quos!</p>
-                </div>
-            </div>
-
-        </div>
+                </article>
+            </section>
+        </section>
         <!-- Other blank columns for blank space to the right of the jumbotron -->
-        <div class="col-sm-4">
-        </div>
-    </div>
-
-
-    </div>
-
+        <section class="col-sm-4"></section>
+    </main>
 </body>
 
 </html>
