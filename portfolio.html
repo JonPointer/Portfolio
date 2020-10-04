@@ -26,9 +26,8 @@
     <title>Portfolio</title>
 </head>
 
-<!-- ??? Need to replace bg-dark below with an image  -->
-
-<body class="bg-dark">
+<body class="h-100 mb-4"
+    style="background:transparent url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60') no-repeat center center /cover">
     <!-- Start the navbar, but no container, so that the navbar extends the full width of the window with no side margins -->
     <!-- Navbar Class "navbar-expand-lg" so content is 100% wide until large breakpoint of 992px -->
     <!-- bg-light for navbar background coloring and navbar-light for text coloring   -->
@@ -58,25 +57,42 @@
         <br>
         <br>
         <!-- New row breaking the page into two columns - one with picture and text in a jumbotron box, and one blank.
-        The columns will be sm so that they are full screen on the small screen and limited to 8/4 above that. -->
+        To match the images in the assignment, col-md-8 is used in first column to create blank space to the right for medium and large.
+        Then for extra large screens, space to the right is removed with col-xl-12 -->
         <section class="row">
-            <section class="col-sm-8">
+            <section class="col-md-8 col-xl-12">
                 <!-- Jumbotron to hold the content of this section in one box -->
                 <article class="jumbotron bg-white h-100">
                     <h1>Portfolio</h1>
                     <!-- Horizontal dividing line -->
                     <hr>
                     <!-- Portfolio Images -->
-                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
-                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
-                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
-                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
-                    <img class="float-left mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="250px">
+                    <!-- Single column of images up to medium and then expand to two columns at large and three columns at extra large  -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <img class="mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="100%">
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <img class="mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="100%">
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <img class="mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="100%">
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <img class="mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="100%">
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <img class="mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="100%">
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <img class="mr-4 mb-2" src="./Assets/MyImages/Luke1.JPG" alt="Luke" width="100%">
+                        </div>
+                    </div>
                 </article>
             </section>
         </section>
-        <!-- Other blank columns for blank space to the right of the jumbotron -->
-        <section class="col-sm-4"></section>
+        <!-- Matching columns per note above - to give blanks to the right above medium and full width at extra large -->
+        <section class="col-md-4 col-xl-0"></section>
     </main>
 </body>
 
