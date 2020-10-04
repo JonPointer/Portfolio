@@ -11,24 +11,12 @@
     <!-- Link to additional CSS file -->
     <link rel="stylesheet" href="./Assets/style.css">
 
-    <!-- Links to Bootstrap Javascript files to enable drop down menu function  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-
     <!-- Tab Title      -->
     <title>About Me</title>
 </head>
 
-<!-- ??? Need to replace bg-dark below with an image  -->
-
-<body class="bg-dark">
+<body class="h-100 mb-4"
+    style="background:transparent url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60') no-repeat center center /cover">
     <!-- Start the navbar, but no container, so that the navbar extends the full width of the window with no side margins -->
     <!-- Navbar Class "navbar-expand-lg" so content is 100% wide until large breakpoint of 992px -->
     <!-- bg-light for navbar background coloring and navbar-light for text coloring   -->
@@ -42,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Create the items for the navbar-toggler above  -->
-        <!-- ??? Same documentation question -->
+        <!-- ??? ml-auto function -->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <!-- Link to each html file.  About link stays on this page  -->
@@ -54,21 +42,21 @@
     </nav>
 
     <!-- Set a container for the body of the page  -->
-    <main class="container-fluid">
+    <main class="container">
         <br>
         <br>
         <!-- New row breaking the page into two columns - one with picture and text in a jumbotron box, and one blank.
-        The columns will be sm so that they are full screen on the small screen and limited to 8/4 above that. -->
+        To match the images in the assignment, col-md-8 is used in first column to create blank space to the right for medium and large.
+        Then for extra large screens, space to the right is removed with col-xl-12 -->
         <section class="row">
-            <section class="col-sm-8">
+            <section class="col-md-8 col-xl-12">
                 <!-- Jumbotron to hold the content of this section in one box -->
                 <article class="jumbotron bg-white h-100">
                     <h1>About Me</h1>
                     <!-- Horizontal dividing line -->
                     <hr>
-                    <!-- Set image with text to the right -->
+                    <!-- Float image to the left and establish margin on the right and bottom, then inline text after to wrap around it  -->
                     <p>
-                        <!-- Float image to the left and establish margin on the right and bottom of the image  -->
                         <img class="float-left mr-4 mb-1" src="./Assets/MyImages/MeAndFern.JPG" alt="Me and Fern"
                             width="180px">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem necessitatibus excepturi
@@ -84,9 +72,21 @@
                 </article>
             </section>
         </section>
-        <!-- Other blank columns for blank space to the right of the jumbotron -->
-        <section class="col-sm-4"></section>
+        <!-- Matching columns per note above - to give blanks to the right above medium and full width at extra large -->
+        <section class="col-md-4 col-xl-0"></section>
     </main>
+
+    <!-- Links to Bootstrap Javascript files to enable drop down menu function  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
