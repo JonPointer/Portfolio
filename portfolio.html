@@ -56,11 +56,9 @@
     <main class="container-fluid">
         <br>
         <br>
-        <!-- New row breaking the page into two columns - one with picture and text in a jumbotron box, and one blank.
-        To match the images in the assignment, col-md-8 is used in first column to create blank space to the right for medium and large.
-        Then for extra large screens, space to the right is removed with col-xl-12 -->
+        <!-- New row and column to hold images container  -->
         <section class="row">
-            <section class="col-md-8 col-xl-12">
+            <section class="col">
                 <!-- Jumbotron to hold the content of this section in one box -->
                 <article class="jumbotron bg-white h-100">
                     <h1>Portfolio</h1>
@@ -69,52 +67,49 @@
                     <!-- Horizontal dividing line -->
                     <hr>
                     <!-- Portfolio Images -->
-                    <!-- Single column of images up to medium and then expand to two columns at large and three columns at extra large  -->
+                    <!-- Start from extra small with single column of images, expand to two images at medium, and 3 images at large -->
                     <div class="row">
-                        <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <img class="mr-4 mb-2" src="./Assets/MyImages/Book1.JPG" alt="Luke" width="100%">
                         </div>
-                        <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <img class="mr-4 mb-2" src="./Assets/MyImages/Book2.JPG" alt="Luke" width="100%">
                         </div>
-                        <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <img class="mr-4 mb-2" src="./Assets/MyImages/Gym.JPG" alt="Luke" width="100%">
                         </div>
-                        <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <img class="mr-4 mb-2" src="./Assets/MyImages/Panda1.JPG" alt="Luke" width="100%">
                         </div>
-                        <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <img class="mr-4 mb-2" src="./Assets/MyImages/Panda2.JPG" alt="Luke" width="100%">
                         </div>
-                        <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <img class="mr-4 mb-2" src="./Assets/MyImages/Tote.JPG" alt="Luke" width="100%">
                         </div>
-                        <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <img class="mr-4 mb-2" src="./Assets/MyImages/Wagon1.JPG" alt="Luke" width="100%">
                         </div>
-                        <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
                             <img class="mr-4 mb-2" src="./Assets/MyImages/Wagon2.JPG" alt="Luke" width="100%">
                         </div>
                     </div>
                 </article>
             </section>
         </section>
-        <!-- Matching columns per note above - to give blanks to the right above medium and full width at extra large -->
-        <section class="col-md-4 col-xl-0"></section>
     </main>
 
     <!-- Footer with image links to Facebook, Etsy, and LinkedIn  -->
     <footer>
         <div class="fixed-bottom bg-dark text-center">
             <span> <a href="https://www.facebook.com/jon.pointer.1966/" target=blank>
-                    <img class="m-2" src="./Assets/MyImages/facebook-512.webp" alt="facebook" width="30px"></a></span>
+                    <img class="m-2" src="./Assets/MyImages/facebook.png" alt="facebook" width="30px"></a></span>
 
             <span> <a href="https://www.etsy.com/shop/PointerSolutionsLLC" target=blank>
                     <img class="m-2" src="./Assets/MyImages/etsy-512.png" alt="etsy" width="30px"></a></span>
 
             <span> <a href="https://www.linkedin.com/in/jon-pointer-pe-5317619a/" target=blank>
-                    <img class="m-2" src="./Assets/MyImages/1_Linkedin_unofficial_colored_svg-512.png" alt="linkedin"
-                        width="30px"></a></span>
+                    <img class="m-2" src="./Assets/MyImages/LinkedIn.png" alt="linkedin" width="30px"></a></span>
         </div>
 
     </footer>
