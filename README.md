@@ -17,14 +17,14 @@ I strived to use only Bootstrap to reach the desired look, without including my 
 - All Pages
   - A nav-bar class outside of the main container so that it would stretch full width.
   - A Jumbotron in a fluid container to span the width of the page and hold all content
-  - A footer fixed-bottom class footer outside of the main container to span the full width
+  - A fixed-bottom class footer outside of the main container to span the full width
 - About:
   - One column within the Jumbotron
   - Image floated left and in-line with text to get text to wrap around the image
 - Contact:
   - One column within the Jumbotron containing a form
 - Portfolio:
-  - Changing number of columns, depending on screen size, withing the Jumbotron holding the images - such that a responsive tile layout is reached.
+  - Changing number of columns, depending on screen size, within the Jumbotron holding the images - such that a responsive tile layout was reached.
 
 ## Results
 
