@@ -2,35 +2,39 @@
 
 ## Introduction
 
-In this assignment we were to create refractor the existing html and css code to make the following improvements:
+In this assignment we were to create a responsive design utilizing Bootstrap. We were to have 3 pages:
 
-- Correct errors
-- Utilize semantic elements to improve accessability
-- Simplify the structure wherever possible
-- Correct errors
-- Combine and simplify the CSS
+- About (the index.html file)
+- Portfolio
+- Contact
+
+We were instructed to use the Bootstrap grid structure of rows and columns.
 
 ## Approach
 
-To complete the assignment, I reviewed the structure of the code first and made semantic changes that matched the layout of the desired page. Next, I cleaned up unnecessary sections, html errors, added image alt attributes, and basic corrected structure and flow issues.
+I strived to use only Bootstrap to reach the desired look, without including my own customer CSS file. This was achieved by utilizing the following:
 
-Next, I moved to the CSS file and edited the selectors to match the new semantic structure in the html file. Additionally, there were several areas where CSS sections could be combined into one section by referencing an overall group instead of each individual item. Also, I edited the flow of the CSS file to match the flow of the page.
-
-Finally, I rechecked all files for structure, syntax, further simplification, and added comments to guide future editors.
+- All Pages
+  - A nav-bar class outside of the main container so that it would stretch full width.
+  - A Jumbotron in a fluid container to span the width of the page and hold all content
+  - A footer fixed-bottom class footer outside of the main container to span the full width
+- About:
+  - One column within the Jumbotron
+  - Image floated left and in-line with text to get text to wrap around the image
+- Contact:
+  - One column within the Jumbotron containing a form
+- Portfolio:
+  - Changing number of columns, depending on screen size, withing the Jumbotron holding the images - such that a responsive tile layout is reached.
 
 ## Results
 
 ### Path to GitHub Repository
 
-<https://github.com/JonPointer/DUFS_Homework_01>
+<https://github.com/JonPointer/DUFS_Homework_02_Responsive_Portfolio>
 
 ### Path to GitHub Hosted Application
 
-<https://jonpointer.github.io/DUFS_Homework_01/>
-
-### Final Webpage Image
-
-![My Horiseon Homepage Solution](./Horiseon-Homepage.png)
+<https://jonpointer.github.io/DUFS_Homework_02_Responsive_Portfolio/>
 
 # The following is the original Readme file assignment
 
