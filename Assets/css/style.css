@@ -38,3 +38,8 @@ hr {
 img {
   border-radius: 0.25rem;
 }
+
+.row {
+  border-top-color: black;
+  border-top-width: 2px;
+}
