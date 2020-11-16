@@ -1,0 +1,40 @@
+body {
+  /* font-family: "Aldrich", sans-serif; */
+  font-family: "Goldman", cursive;
+}
+
+/* .bodyText {
+  text-align: center;
+} */
+
+#headerText {
+  /* margin-top: 100px; */
+  text-align: center;
+  color: white;
+  background-color: rgb(51, 83, 132);
+  background-image: linear-gradient(rgb(51, 83, 132), rgb(52, 58, 64));
+}
+
+#portfolio {
+  color: white;
+  background-color: rgb(51, 83, 132);
+}
+
+hr {
+  background-color: white;
+}
+
+.myButton {
+  background-color: rgb(40, 103, 178) !important;
+  border-color: rgb(40, 103, 178) !important;
+  height: 30px !important;
+  padding-bottom: 28px !important;
+}
+
+.myButton:hover {
+  background-color: rgb(26, 85, 156) !important;
+}
+
+img {
+  border-radius: 0.25rem;
+}

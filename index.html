@@ -4,82 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Link to font for page -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
     <!-- Link to Bootstrap CSS file -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
     <!-- Tab Title      -->
-    <title>About Me</title>
+    <title>Jon Pointer</title>
 </head>
 
-<body class="h-100 mb-4 bg-dark"
-    style="background:transparent url('https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60') no-repeat center center /cover">
-    <!-- Start the navbar, but no container, so that the navbar extends the full width of the window with no side margins -->
-    <!-- bg-light for navbar background coloring and navbar-light for text coloring   -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- Create a navbar-brand with a href going no-where - on other pages it will link back to this About (index) page  -->
-        <a class="navbar-brand" href="#">Jon Pointer</a>
-        <!-- Create a navbar-toggler that collapses on the lg setting above and references the id navbarNavAltMarkup below -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Create the items for the navbar-toggler above  -->
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <!-- Link to each html file.  About link stays on this page  -->
-                <a class="nav-link" href="./contact.html">Contact</a>
-                <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                <a class="nav-link active" href="#">About <span class="sr-only">(current)</span></a>
-            </div>
-        </div>
-    </nav>
+<body class="container-fluid mt-3 bg-dark">
 
-    <!-- Set a container for the body of the page  -->
-    <main class="container-fluid">
-        <br>
-        <br>
-        <!-- Row with one column to hold the inline image and text  -->
-        <section class="row">
-            <section class="col">
-                <!-- Jumbotron to hold the content of this section in one box -->
-                <article class="jumbotron bg-white h-100">
-                    <h1>About Me</h1>
-                    <!-- Horizontal dividing line -->
-                    <hr>
-                    <!-- Float image to the left and establish margin on the right and bottom, then inline text after to wrap around it  -->
-                    <p>
-                        <img class="float-left mr-4 mb-1" src="./Assets/MyImages/MeAndFern.JPG" alt="Me and Fern"
-                            width="180px">
-                        I am a Mechanical Engineer, Inventor, Coder, Volunteer, Father, and Granddad. I've worked as a
-                        Mechanical Engineer for the <a href="https://www.woodward.com/home" target="_blank">same
-                            company</a> for 30
-                        years, creating electric actuators, motors, and
-                        other electromagnetic devices.
-                    </p>
-                    <p>
-                        On the side I also run my own, small, <a href="http://www.pointersolutionsllc.com/"
-                            target="_blank">individual inventor business</a>, where I've created devices
-                        for the home and written software, including a Chrome Extension. My next step is to expand this
-                        passion for coding into a new career.
-                    </p>
-                    <p>
-                        Finally, I've spent many years volunteering to bring a <a href="https://www.mountainsage.org/"
-                            target="_blank">Waldorf inspired charter
-                            school</a> to life
-                        in Fort Collins for my children and grandchildren.
-                    </p>
-                    <p>
-                        Creating, learning, and being with my family bring me the most joy in life.
-                    </p>
-                </article>
-            </section>
-        </section>
-    </main>
+
+    <div class="jumbotron pb-0 pt-2" id="headerText">
+        <h1 class="display-4">Jon S. Pointer</h1>
+        <p class="lead">FULL STACK WEB DEVELOPER</p>
+        <hr class="my-4">
+        <h5>Full Stack Web Developer with experience in scientific programming and
+            industrial product
+            development. Specializing in JavaScript, jQuery, Node.js, and React.<h5>
+                <hr class="my-4">
+                <h6>JONPOINTER@MSN.COM 970-980-7849<h6>
+                        <span> <a href="https://www.linkedin.com/in/jon-pointer-pe-5317619a/" target=blank>
+                                <img class="m-2" src="./Assets/MyImages/LinkedIn.png" alt="linkedin"
+                                    width="30px"></a></span>
+
+
+                        <span> <a href="./Assets/pdf/Jon Pointer.pdf" target=blank>
+                                <button type="button"
+                                    class="btn btn-primary btm-small myButton">resume</button></a></span>
+
+
+                        <span> <a href="https://github.com/JonPointer" target=blank>
+                                <img class="m-2" src="./Assets/MyImages/GitHub.png" alt="GitHub"
+                                    width="30px"></a></span>
+                        <hr class="my-4">
+                        <p class="lead"><i>PORTFOLIO</i></p>
+    </div>
+    <!-- Portfolio  -->
+
+    <section class="row">
+        <article class="col-md-8 mb-4">
+            <img class="w-100" src="./Assets/MyImages/ResTeachingTools.PNG" alt="Restorative Teaching Tools">
+        </article>
+        <article class="col-md-4 mb-2">
+            <div class="card">
+                <div class="card-body bg-light">
+                    <h4 class="card-title">Restorative Teaching Tools</h4>
+                    <h5 class="card-subtitle mb-2 text-muted">WordPress Site</h5>
+                    <h6 class="card-text">Fully functional responsive site with multiple sign-up forms and downloadable
+                        content.</h6>
+                    <a href="https://restorativeteachingtools.com/" class="card-link">Restorative Teaching Tools</a>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="row">
+        <article class="col-md-8 mb-2">
+            <img class="w-100" src="./Assets/MyImages/RetroQuiz.PNG" alt="Retro Quiz Game">
+        </article>
+        <article class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body bg-light">
+                    <h4 class="card-title">Retro Computer Quiz</h4>
+                    <h5 class="card-subtitle mb-2 text-muted">Bootstrap and jQuery</h5>
+                    <h6 class="card-text">Quiz game with dynamic HTML generation, timer, and local storage</h6>
+                    <a href="https://jonpointer.github.io/Retro_Computer_Quiz/" class="card-link">Retro Computer
+                        Quiz</a>
+                </div>
+            </div>
+        </article>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- 2nd Portfolio Card  -->
+    <!-- <div class="col card m-1">
+                <img src="./Assets/MyImages/RetroQuiz.PNG" class="card-img-top" alt="Retro Quiz Game">
+                <div class="card-body">
+                    <h5 class="card-title">Retro Computer Quiz</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Bootstrap and jQuery</h6>
+                    <p class="card-text">Quiz game with dynamic HTML generation, timer, and local storage</p>
+                    <a href="https://jonpointer.github.io/Retro_Computer_Quiz/" class="btn btn-primary myButton">Retro
+                        Computer
+                        Quiz</a>
+                </div>
+            </div>
+
+            <div class="col card m-1">
+                <img src="./Assets/MyImages/WeatherDashboard.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Weather Dashboard</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Bootstrap, jQuery, and API Calls</h6>
+                    <p class="card-text">Weather dashboard calling two APIs and utilizing dynamics HTML generation and
+                        local storage.</p>
+                    <a href="https://jonpointer.github.io/Weather_Dashboard/" class="btn btn-primary myButton">Weather
+                        Dashboard</a>
+                </div>
+            </div>
+            <div class="col card m-1">
+                <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jon Pointer</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Fort Collins, CO</h6>
+                    <p class="card-text">I am a Mechanical Engineer, Coder, Inventor, Dad, and Granddad. :)</p>
+                    <a href="https://www.linkedin.com/in/jon-pointer-pe-5317619a/"
+                        class="btn btn-primary myButton">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="col card m-1">
+                <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jon Pointer</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Fort Collins, CO</h6>
+                    <p class="card-text">I am a Mechanical Engineer, Coder, Inventor, Dad, and Granddad. :)</p>
+                    <a href="https://www.linkedin.com/in/jon-pointer-pe-5317619a/"
+                        class="btn btn-primary myButton">LinkedIn</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+ -->
+
+
+
+
 
     <!-- Footer with image links to Facebook, Etsy, and LinkedIn  -->
-    <footer>
+    <!-- <footer>
         <div class="fixed-bottom bg-dark text-center">
             <span> <a href="https://www.facebook.com/jon.pointer.1966/" target=blank>
                     <img class="m-2" src="./Assets/MyImages/facebook2.png" alt="facebook" width="30px"></a></span>
@@ -91,7 +159,7 @@
                     <img class="m-2" src="./Assets/MyImages/LinkedIn.png" alt="linkedin" width="30px"></a></span>
         </div>
 
-    </footer>
+    </footer> -->
 
     <!-- Links to Bootstrap Javascript files to enable drop down menu function  -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -103,6 +171,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./Assets/css/style.css">
 
 </body>
 
