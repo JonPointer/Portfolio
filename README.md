@@ -2,7 +2,7 @@
 
 ## Introduction
 
-GitHub Portfolio for Jon Pointer. Constructed using primarily Bootstrap.
+GitHub Portfolio for Jon Pointer. Constructed using primarily Bootstrap with overriding CSS for some elements.
 
 ## Results
 

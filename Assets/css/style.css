@@ -1,45 +1,33 @@
+/* Set font family for the body  */
 body {
-  /* font-family: "Aldrich", sans-serif; */
   font-family: "Goldman", cursive;
 }
 
-/* .bodyText {
-  text-align: center;
-} */
-
+/* Set header section to be blue with gradient to gray, white text, and centered */
 #headerText {
-  /* margin-top: 100px; */
   text-align: center;
   color: white;
   background-color: rgb(51, 83, 132);
   background-image: linear-gradient(rgb(51, 83, 132), rgb(52, 58, 64));
 }
 
-#portfolio {
-  color: white;
-  background-color: rgb(51, 83, 132);
-}
-
+/* Change the dividing lines to white */
 hr {
   background-color: white;
 }
 
+/* Force changes to resume button over Bootstrap defaults */
 .myButton {
   background-color: rgb(40, 103, 178) !important;
   border-color: rgb(40, 103, 178) !important;
   height: 30px !important;
   padding-bottom: 28px !important;
 }
-
 .myButton:hover {
   background-color: rgb(26, 85, 156) !important;
 }
 
+/* Add image border radius to match card */
 img {
   border-radius: 0.25rem;
-}
-
-.row {
-  border-top-color: black;
-  border-top-width: 2px;
 }
